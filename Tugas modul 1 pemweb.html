@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+
+<body style="background-color: #f0f8ff; margin: 30px; font-family: Arial;">
+    <center>
+        <img src="gambar.jpg" alt="Logo Kampus" width="120">
+        <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+    </center>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend><b>Data Pribadi</b></legend>
+
+            <label for="nama">Nama Lengkap :</label><br>
+            <input type="text" id="nama" name="nama"
+                placeholder="Masukkan nama lengkap" required>
+            <br><br>
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email"
+                placeholder="contoh@gmail.com" required>
+            <br><br>
+            <label>Jenis Kelamin :</label><br>
+            <input type="radio" id="pria"
+                name="jk" value="Pria" required>
+            <label for="pria">Pria</label>
+
+            <input type="radio" id="wanita"
+                name="jk" value="Wanita">
+            <label for="wanita">Wanita</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Hobi</b></legend>
+
+            <input type="checkbox" id="membaca"
+                name="hobi" value="Membaca">
+            <label for="membaca">Membaca</label><br>
+
+            <input type="checkbox" id="olahraga"
+                name="hobi" value="Olahraga">
+            <label for="olahraga">Olahraga</label><br>
+
+            <input type="checkbox" id="musik"
+                name="hobi" value="Musik">
+            <label for="musik">Musik</label><br>
+
+            <input type="checkbox" id="game"
+                name="hobi" value="Game">
+            <label for="game">Game</label>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><b>Pilihan Jurusan</b></legend>
+
+            <label for="jurusan">Pilih Jurusan :</label><br>
+
+            <select id="jurusan" name="jurusan" required>
+                <option value="">--Pilih Jurusan--</option>
+                <option value="Teknik Informatika">
+                    Teknik Informatika
+                </option>
+                <option value="Manajemen">
+                    Manajemen
+                </option>
+                <option value="Akuntansi">
+                    Akuntansi
+                </option>
+            </select>
+
+        </fieldset>
+        <br>
+        <fieldset>
+    <legend><b>Alamat</b></legend>
+
+    <label for="alamat">Alamat Lengkap :</label><br>
+    <textarea id="alamat"
+              name="alamat"
+              rows="5"
+              cols="40"
+              placeholder="Masukkan alamat lengkap (opsional)"
+              style="resize: none;"></textarea>
+
+    </fieldset>
+
+        <br>
+
+        <input type="submit" value="Daftar Sekarang">
+
+    </form>
+
+    <hr>
+
+    <!-- Link Informasi Kampus -->
+    <p>
+        Informasi lebih lanjut kunjungi:
+        <a href="https://pmb.stitek.ac.id/" target="_blank">
+            Website Kampus
+        </a>
+    </p>
+
+</body>
+</html>
